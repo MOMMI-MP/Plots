@@ -7,31 +7,32 @@ Body{
 	background-color: #232323;
 }
 #logo{
-	width: 300px;
-    height: 150px;
+	width: 320px;
+    height: 170px;
     float: left;
 }
 #mouse{
-	width: 900px;
-    height: 500px;
-    float: left;
-    
-    margin: 10px 0px 0px 250px;
-
+	width: 450px;
+    height: 600px;
+    float: right;
+    position: absolute;
+    margin: 250px 0px 0px 750px;
 }
 
 .heading{
-	padding: 35px 0px 45px 60px;
+	padding: 30px 0px 20px 60px;
+	margin-bottom: 15px;
 	font-family: sans-serif;
 	color: #FFFFFF;
+
 }
 .heading h1{
-	font-size: 30px;
+	font-size: 32px;
 }
 
 .bar {
 	/*background-image: linear-gradient(to right, white, gray);*/
-	background-color: white;
+	background-color: #D5D5D5;
 	background-size: 100%;
 	overflow: hidden;
 	padding-left: 30px;
@@ -55,11 +56,11 @@ Body{
 }
 
 .intro{
-	margin-left: 40px;
+	margin-left: 60px;
 	font-family: sans-serif;
-	margin-top: 60px;
+	margin-top: 70px;
 	color: #FFFFFF;
-	font-size: 17px;
+	font-size: 25px;
 }
 .aim{
 	margin-left: 40px;
@@ -79,4 +80,7 @@ Body{
 .data a 
 { color: inherit; } 
 
-
+.gallery img{
+	max-width: 45%;
+	max-height: 45%;
+}
