@@ -1,0 +1,104 @@
+html, body {
+	margin: 0;
+  	padding: 0;
+}
+Body{
+	/*background-image: linear-gradient(to bottom right, black, gray);*/
+	background-color: #232323;
+}
+#logo{
+	width: 320px;
+    height: 170px;
+    float: left;
+}
+#mouse{
+	width: 900px;
+    height: 500px;
+    position: absolute;
+    margin: 20px 0px 0px 250px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    transition: 0.7s;
+}
+#mouse:hover{
+	width: 950px;
+    height: 550px;
+    transition: 0.7s;
+    border-radius: 300px;
+}
+.heading{
+	padding: 30px 0px 20px 60px;
+	margin-bottom: 15px;
+	font-family: sans-serif;
+	color: #FFFFFF;
+
+}
+.heading h1{
+	font-size: 32px;
+}
+
+.bar {
+	/*background-image: linear-gradient(to right, white, gray);*/
+	background-color: #D5D5D5;
+	background-size: 100%;
+	overflow: hidden;
+	padding-left: 30px;
+}
+
+.bar a{
+  	float: left;
+  	font-family: sans-serif;
+  	color: black;
+  	text-align: center;
+  	padding: 9px 35px;
+  	text-decoration: none;
+  	font-size: 18px;	
+	display: inline-block;
+	transition: background 0.5s;
+}
+
+.bar a:hover{
+	color: white;
+	background-color: #474747;
+}
+
+.intro{
+	margin: 40px;
+	font-family: sans-serif;
+	margin-top: 60px;
+	color: black;
+	font-size: 16px;
+	padding: 5px 5px 5px 30px;
+	background-color: #D5D5D5;
+	border-radius: 10px;
+	transition: 0.7s;
+	opacity: 90%;
+}
+.intro:hover{
+	transition: 0.7s;
+	padding: 8px 8px 8px 50px;
+	background-color: black;
+	opacity: 80%;
+	color: white;
+	font-size: 18px;
+	border-radius: 50px;
+}
+.aim{
+	margin-left: 40px;
+	font-family: sans-serif;
+	margin-top: 60px;
+	color: #FFFFFF;
+	font-size: 17px;
+}
+
+.data{
+	margin-left: 60px;
+	font-family: sans-serif;
+	margin-top: 70px;
+	color: #FFFFFF;
+	font-size: 25px;
+}
+.data a 
+{ color: inherit; } 
+
+
