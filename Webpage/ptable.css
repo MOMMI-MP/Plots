@@ -1,0 +1,81 @@
+html, body {
+	margin: 0;
+  	padding: 0;
+}
+Body{
+	
+}
+
+#logo{
+		width: 320px;
+    height: 170px;
+    float: left;
+}
+
+#mouse{
+	width: 350px;
+    height: 1200px;
+    float: right;
+    position: absolute;
+    margin: 250px 0px 0px 700px;
+}
+
+.title{
+	padding: 30px 0px 0px 60px;
+	margin-left: 5px;
+	font-family: sans-serif;
+	color: #FFFFFF;
+}
+
+.heading{
+	padding: 30px 0px 20px 60px;
+	margin-bottom: 15px;
+	font-family: sans-serif;
+	color: #FFFFFF;
+
+}
+.heading h1{
+	font-size: 32px;
+	margin-top: 22px;
+}
+
+.bar {
+	/*background-image: linear-gradient(to right, white, gray);*/
+	background-color: #D5D5D5;
+	background-size: 100%;
+	overflow: hidden;
+	margin-top: 25px;
+	padding-left: 30px;
+}
+
+.bar a{
+  	float: left;
+  	font-family: sans-serif;
+  	color: black;
+  	text-align: center;
+  	padding: 6px 35px;
+  	text-decoration: none;
+  	font-size: 18px;	
+	display: inline-block;
+	transition: background 0.5s;
+}
+
+.bar a:hover{
+	text-decoration: none;
+	color: white;
+	background-color: #474747;
+}
+
+
+.data{
+	margin-left: 60px;
+	font-family: sans-serif;
+	margin-top: 70px;
+	color: #FFFFFF;
+	font-size: 25px;
+}
+.data a 
+{ color: inherit; } 
+
+
+
