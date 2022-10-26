@@ -168,6 +168,25 @@ Body{
 
 }
 
+.gallery img{
+	border-style: solid;
+	border-radius: 80px;
+	background-color: gray;
+	padding: 30px;
+	margin: 80px 0px 40px 150px;
+	height: 400px;
+	width: 1100px;
+	transition: 0.5s;
+}
+.gallery img:hover{
+	transition: 0.5s;
+	height: 430px;
+	width: 1182px;
+	margin-left: 100px;
+	border-radius: 15px;
+}
+
+
 .full{
 	background-color: white;
 }
