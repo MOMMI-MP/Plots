@@ -30,6 +30,7 @@ Body{
 	font-size: 32px;
 }
 
+
 .bar {
 	/*background-image: linear-gradient(to right, white, gray);*/
 	background-color: #D5D5D5;
@@ -172,20 +173,33 @@ Body{
 	border-style: solid;
 	border-radius: 80px;
 	background-color: gray;
+	position: absolute;
 	padding: 30px;
-	margin: 80px 0px 40px 150px;
+	margin: 50px 0px 40px 150px;
 	height: 400px;
 	width: 1100px;
 	transition: 0.5s;
 }
-.gallery img:hover{
-	transition: 0.5s;
-	height: 430px;
-	width: 1182px;
-	margin-left: 100px;
-	border-radius: 15px;
+
+
+.links{
+	position: relative;
+	margin-top: 50px;
+	margin-left: 320px;
+}
+.links a{
+	text-decoration: none;
+	border-radius: 10px;
+	color: black; 
+	font-size: 10px;
+	display: inline-block;
+	padding: 22px 50px 22px 50px;
+	margin: 65px 40px 0px 80px;
+	background-color: #D5D5D5;
+	opacity: 0%;
 }
 
-
-
+.full{
+	background-color: white;
+}
 
