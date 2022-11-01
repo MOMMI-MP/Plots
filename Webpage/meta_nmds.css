@@ -75,7 +75,7 @@ Body{
 	font-family: sans-serif;
 	margin-top: 70px;
 	color: #FFFFFF;
-	font-size: 25px;
+	font-size: 15px;
 }
 .data a 
 { color: inherit; } 
@@ -84,3 +84,4 @@ Body{
 	max-width: 45%;
 	max-height: 45%;
 }
+
