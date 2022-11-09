@@ -76,6 +76,7 @@ Body{
 	float: right;
 	margin-top: 10px;
 	margin-bottom: 100px;
+	margin-right: -25px;
 }
 .links a { 
 	text-decoration: none;	
@@ -93,7 +94,6 @@ Body{
 	color: white;
 	transition: 0.7s;
 	border-style: solid;
-	border-width: 1px;
 	border-color: white;
 }
 .data p{
