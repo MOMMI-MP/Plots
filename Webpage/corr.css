@@ -80,8 +80,7 @@ Body{
 .data a 
 { color: inherit; } 
 
-.data img{
-	max-width: 75%;
-	max-height: 75%;
+.gallery img{
+	width: 900px;
+	height: 600px;
 }
-
