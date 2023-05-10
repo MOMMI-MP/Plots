@@ -1,0 +1,421 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+	<TITLE>MOMMI-MP</TITLE>
+	<link rel="stylesheet" type="text/css" href="micromime.css"/>
+	<link rel = "icon" href = "/Users/kaustubhpachpor/Downloads/rat.png" type = "image/x-icon">
+          
+    </head>
+
+</HEAD>
+<body>
+	<img id="logo" src="/Users/kaustubhpachpor/Desktop/1111.png">
+	
+	
+	<div class="heading">
+		<h1>Multi-omics Metabolic & Microbiome <br>Profiling of Mouse Pregnancy</h1>
+	</div>
+
+<div class="bar">
+		<div class="menu">
+			<a href="index.html">Home</a>
+			<a href="layout.html">Structure</a>
+			<a href="mouse.html">Metabolic Profile</a>
+			<a href="microbes.html">Microbes</a>
+			<a href="metabolites.html">Metabolites</a>
+			<a href="mimenet.html">MiMeNet</a>
+			<a href="contact.html">Contact</a>
+		
+	</div>  
+</div>
+
+		
+			
+			
+	<div class="intro">
+
+			
+			<p>MiMeNet is an existing computational tool that uses deep neural networks to explore microbiome-metabolome relationships. It analyses microbiome and metabolome datasets to identify associations between the two types of data.<br><br>
+			In addition to MOMMI-MP, the results from MiMeNet provide additional insights and associations between microbes and metabolites that show significant changes during pregnancy. 
+			</p>
+	</div>
+
+		<style type="text/css">
+.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-8n12{background-color:#B0B3B2;border-color:#000000;text-align:center;vertical-align:middle}
+.tg .tg-uj9k{background-color:#84C5FE;border-color:#000000;text-align:center;vertical-align:top}
+.tg .tg-gyud{background-color:rgba(119, 192, 255, 0.9);border-color:#000000;text-align:center;vertical-align:top}
+.tg .tg-x57z{background-color:#FB8;border-color:#000000;text-align:center;vertical-align:top}
+.tg .tg-bxw4{background-color:#FFFE93;border-color:#000000;text-align:center;vertical-align:top}
+.tg .tg-l5mt{background-color:#B0A3FF;border-color:#000000;text-align:center;vertical-align:middle}
+.tg .tg-8hvs{background-color:#B0B3B2;border-color:#000000;text-align:left;vertical-align:middle}
+.tg .tg-s9oj{background-color:#16FFAD;border-color:#000000;text-align:center;vertical-align:top}
+.tg .tg-wp8o{border-color:#000000;text-align:center;vertical-align:top}
+.tg .tg-q1eq{background-color:#A9E484;border-color:#000000;text-align:center;vertical-align:top}
+.tg .tg-zs6n{background-color:#FB8;border-color:#000000;text-align:center;vertical-align:middle}
+.tg .tg-f7sz{background-color:#16FFAD;border-color:#000000;text-align:center;vertical-align:middle}
+.tg .tg-spgo{background-color:#B0B3B2;border-color:#000000;text-align:left;vertical-align:top}
+.tg .tg-c745{background-color:#B0A3FF;border-color:#000000;text-align:center;vertical-align:top}
+.tg .tg-rl6z{background-color:#D4D4D4;border-color:#000000;text-align:center;vertical-align:middle}
+.tg .tg-73oq{border-color:#000000;text-align:left;vertical-align:top}
+.tg .tg-9kst{background-color:rgba(161, 225, 118, 0.9);border-color:#000000;text-align:center;vertical-align:top}
+.tg .tg-jxu1{background-color:rgba(255, 254, 134, 0.9);border-color:#000000;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-8n12" colspan="2"><span style="background-color:#B0B3B2"> </span><br>Color Guide<span style="background-color:#B0B3B2"> </span></th>
+    <th class="tg-q1eq"><span style="background-color:#A9E484"> </span><br><span style="background-color:#A9E484"> </span></th>
+    <th class="tg-q1eq" colspan="3"><span style="background-color:#A9E484"> </span><br>&lt; &#945 ( 0.1 )<span style="background-color:#A9E484"> </span></th>
+    <th class="tg-uj9k" colspan="3"><span style="background-color:#84C5FE"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06 - UP</span><span style="background-color:#84C5FE"> </span></th>
+    <th class="tg-bxw4"><span style="background-color:#FFFE93"> </span><br><span style="background-color:#FFFE93"> </span></th>
+    <th class="tg-bxw4" colspan="3"><span style="background-color:#FFFE93"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07 - DOWN</span><span style="background-color:#FFFE93"> </span></th>
+    <th class="tg-zs6n" colspan="3"><span style="background-color:#FB8"> </span><br>C57<span style="background-color:#FB8"> </span></th>
+    <th class="tg-l5mt"><span style="background-color:#B0A3FF"> </span><br><span style="background-color:#B0A3FF"> </span></th>
+    <th class="tg-l5mt" colspan="3"><span style="background-color:#B0A3FF"> </span><br>CD1<span style="background-color:#B0A3FF"> </span></th>
+    <th class="tg-f7sz" colspan="3"><span style="background-color:#16FFAD"> </span><br>NS<span style="background-color:#16FFAD"> </span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-spgo" rowspan="2"><span style="background-color:#B0B3B2"> </span><br><span style="background-color:#B0B3B2"> </span><br></td>
+    <td class="tg-8hvs" rowspan="2"><span style="background-color:#B0B3B2"> </span><br>Microbes<span style="background-color:#B0B3B2"> </span></td>
+    <td class="tg-zs6n"><span style="background-color:#FB8"> </span><br><span style="background-color:#FB8"> </span></td>
+    <td class="tg-zs6n" colspan="6"><span style="background-color:#FB8"> </span><br>C57<span style="background-color:#FB8"> </span></td>
+    <td class="tg-l5mt"><span style="background-color:#B0A3FF"> </span><br><span style="background-color:#B0A3FF"> </span></td>
+    <td class="tg-l5mt" colspan="6"><span style="background-color:#B0A3FF"> </span><br>CD1<span style="background-color:#B0A3FF"> </span></td>
+    <td class="tg-f7sz"><span style="background-color:#16FFAD"> </span><br><span style="background-color:#16FFAD"> </span></td>
+    <td class="tg-f7sz" colspan="6"><span style="background-color:#16FFAD"> </span><br>NS<span style="background-color:#16FFAD"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-x57z"><span style="background-color:#FB8"> </span><br>Plot<span style="background-color:#FB8"> </span></td>
+    <td class="tg-x57z"><span style="background-color:#FB8"> </span><br>Adj. p-val<span style="background-color:#FB8"> </span></td>
+    <td class="tg-x57z"><span style="background-color:#FB8"> </span><br>G10<span style="background-color:#FB8"> </span></td>
+    <td class="tg-x57z"><span style="background-color:#FB8"> </span><br>G15<span style="background-color:#FB8"> </span></td>
+    <td class="tg-x57z"><span style="background-color:#FB8"> </span><br>G19<span style="background-color:#FB8"> </span></td>
+    <td class="tg-x57z"><span style="background-color:#FB8"> </span><br>PP3<span style="background-color:#FB8"> </span></td>
+    <td class="tg-x57z"><span style="background-color:#FB8"> </span><br>PP20<span style="background-color:#FB8"> </span></td>
+    <td class="tg-c745"><span style="background-color:#B0A3FF"> </span><br>Plot<span style="background-color:#B0A3FF"> </span></td>
+    <td class="tg-c745"><span style="background-color:#B0A3FF"> </span><br>Adj. p-val<span style="background-color:#B0A3FF"> </span></td>
+    <td class="tg-c745"><span style="background-color:#B0A3FF"> </span><br>G10<span style="background-color:#B0A3FF"> </span></td>
+    <td class="tg-c745"><span style="background-color:#B0A3FF"> </span><br>G15<span style="background-color:#B0A3FF"> </span></td>
+    <td class="tg-c745"><span style="background-color:#B0A3FF"> </span><br>G19<span style="background-color:#B0A3FF"> </span></td>
+    <td class="tg-c745"><span style="background-color:#B0A3FF"> </span><br>PP3<span style="background-color:#B0A3FF"> </span></td>
+    <td class="tg-c745"><span style="background-color:#B0A3FF"> </span><br>PP20<span style="background-color:#B0A3FF"> </span></td>
+    <td class="tg-s9oj"><span style="background-color:#16FFAD"> </span><br>Plot<span style="background-color:#16FFAD"> </span></td>
+    <td class="tg-s9oj"><span style="background-color:#16FFAD"> </span><br>Adj. p-val<span style="background-color:#16FFAD"> </span></td>
+    <td class="tg-s9oj"><span style="background-color:#16FFAD"> </span><br>G10<span style="background-color:#16FFAD"> </span></td>
+    <td class="tg-s9oj"><span style="background-color:#16FFAD"> </span><br>G15<span style="background-color:#16FFAD"> </span></td>
+    <td class="tg-s9oj"><span style="background-color:#16FFAD"> </span><br>G19<span style="background-color:#16FFAD"> </span></td>
+    <td class="tg-s9oj"><span style="background-color:#16FFAD"> </span><br>PP3<span style="background-color:#16FFAD"> </span></td>
+    <td class="tg-s9oj"><span style="background-color:#16FFAD"> </span><br>PP20<span style="background-color:#16FFAD"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-rl6z"><span style="background-color:#D4D4D4"> </span><br>1<span style="background-color:#D4D4D4"> </span></td>
+    <td class="tg-73oq"> <br><span style="font-weight:normal;font-style:normal;color:#000">[Prevotella]</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.260</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">-</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><a href="https://mommi-mp.github.io/Plots/Webpage/nsrank6plots.html#18">&#x1F4C8</a> </td>
+    <td class="tg-9kst"><span style="background-color:rgba(161, 225, 118, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">0.011</span><span style="background-color:rgba(161, 225, 118, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-rl6z">2</td>
+    <td class="tg-73oq"> <br><span style="font-weight:normal;font-style:normal;color:#000">Anaerostipes</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.526</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><a href="https://mommi-mp.github.io/Plots/Webpage/cd1rank6plots.html#16">&#x1F4C8</a> </td>
+    <td class="tg-9kst"><span style="background-color:rgba(161, 225, 118, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">0.070</span><span style="background-color:rgba(161, 225, 118, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.283</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+  </tr>
+  <tr>
+    <td class="tg-rl6z">3</td>
+    <td class="tg-73oq"> <br><span style="font-weight:normal;font-style:normal;color:#000">Bacteroides</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.867</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><a href="https://mommi-mp.github.io/Plots/Webpage/cd1rank6plots.html#4">&#x1F4C8</a> </td>
+    <td class="tg-9kst"><span style="background-color:rgba(161, 225, 118, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">0.026</span><span style="background-color:rgba(161, 225, 118, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.715</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+  </tr>
+  <tr>
+    <td class="tg-rl6z">4</td>
+    <td class="tg-73oq"> <br><span style="font-weight:normal;font-style:normal;color:#000">Clostridium</span> </td>
+    <td class="tg-wp8o"> <br><a href="https://mommi-mp.github.io/Plots/Webpage/c57rank6plots.html#29">&#x1F4C8</a> </td>
+    <td class="tg-9kst"><span style="background-color:rgba(161, 225, 118, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">0.001</span><span style="background-color:rgba(161, 225, 118, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-wp8o"> <br><a href="https://mommi-mp.github.io/Plots/Webpage/cd1rank6plots.html#27">&#x1F4C8</a> </td>
+    <td class="tg-9kst"><span style="background-color:rgba(161, 225, 118, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">0.000</span><span style="background-color:rgba(161, 225, 118, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-wp8o"> <br><a href="https://mommi-mp.github.io/Plots/Webpage/nsrank6plots.html#37">&#x1F4C8</a> </td>
+    <td class="tg-9kst"><span style="background-color:rgba(161, 225, 118, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">0.000</span><span style="background-color:rgba(161, 225, 118, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-rl6z">5</td>
+    <td class="tg-73oq"> <br><span style="font-weight:normal;font-style:normal;color:#000">Adlercreutzia</span> </td>
+    <td class="tg-wp8o"> <br><a href="https://mommi-mp.github.io/Plots/Webpage/c57rank6plots.html#21">&#x1F4C8</a> </td>
+    <td class="tg-9kst"><span style="background-color:rgba(161, 225, 118, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">0.076</span><span style="background-color:rgba(161, 225, 118, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.956</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.155</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+  </tr>
+  <tr>
+    <td class="tg-rl6z">6</td>
+    <td class="tg-73oq"> <br><span style="font-weight:normal;font-style:normal;color:#000">Prevotella</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.260</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">-</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><a href="https://mommi-mp.github.io/Plots/Webpage/nsrank6plots.html#18">&#x1F4C8</a> </td>
+    <td class="tg-9kst"><span style="background-color:rgba(161, 225, 118, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">0.011</span><span style="background-color:rgba(161, 225, 118, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-rl6z">7</td>
+    <td class="tg-73oq"> <br><span style="font-weight:normal;font-style:normal;color:#000">Unclassified Bacteroidales</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.267</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">-</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><a href="https://mommi-mp.github.io/Plots/Webpage/nsrank6plots.html#16">&#x1F4C8</a> </td>
+    <td class="tg-9kst"><span style="background-color:rgba(161, 225, 118, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">0.054</span><span style="background-color:rgba(161, 225, 118, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-rl6z">8</td>
+    <td class="tg-73oq"> <br><span style="font-weight:normal;font-style:normal;color:#000">Bifidobacterium</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.166</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><a href="https://mommi-mp.github.io/Plots/Webpage/cd1rank6plots.html#5">&#x1F4C8</a> </td>
+    <td class="tg-9kst"><span style="background-color:rgba(161, 225, 118, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">0.000</span><span style="background-color:rgba(161, 225, 118, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.283</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+  </tr>
+  <tr>
+    <td class="tg-rl6z">9</td>
+    <td class="tg-73oq"> <br><span style="font-weight:normal;font-style:normal;color:#000">Lactobacillus</span> </td>
+    <td class="tg-wp8o"> <br><a href="https://mommi-mp.github.io/Plots/Webpage/c57rank6plots.html#7">&#x1F4C8</a> </td>
+    <td class="tg-9kst"><span style="background-color:rgba(161, 225, 118, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">0.000</span><span style="background-color:rgba(161, 225, 118, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.707</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.919</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+  </tr>
+  <tr>
+    <td class="tg-rl6z">10</td>
+    <td class="tg-73oq"> <br><span style="font-weight:normal;font-style:normal;color:#000">Unclassified Rikenellaceae</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.934</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><a href="https://mommi-mp.github.io/Plots/Webpage/cd1rank6plots.html#1">&#x1F4C8</a> </td>
+    <td class="tg-9kst"><span style="background-color:rgba(161, 225, 118, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">0.020</span><span style="background-color:rgba(161, 225, 118, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.739</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+  </tr>
+  <tr>
+    <td class="tg-rl6z">11</td>
+    <td class="tg-73oq"> <br><span style="font-weight:normal;font-style:normal;color:#000">Parabacteroides</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">-</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><a href="https://mommi-mp.github.io/Plots/Webpage/cd1rank6plots.html#9">&#x1F4C8</a> </td>
+    <td class="tg-9kst"><span style="background-color:rgba(161, 225, 118, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">0.017</span><span style="background-color:rgba(161, 225, 118, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.175</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+  </tr>
+  <tr>
+    <td class="tg-rl6z">12</td>
+    <td class="tg-73oq"> <br><span style="font-weight:normal;font-style:normal;color:#000">Unclassified mitochondria</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.526</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><span style="font-weight:normal;font-style:normal;color:#000">0.841</span> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br> </td>
+    <td class="tg-wp8o"> <br><a href="https://mommi-mp.github.io/Plots/Webpage/nsrank6plots.html#32">&#x1F4C8</a> </td>
+    <td class="tg-9kst"><span style="background-color:rgba(161, 225, 118, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">0.084</span><span style="background-color:rgba(161, 225, 118, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-gyud"><span style="background-color:rgba(119, 192, 255, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B06</span><span style="background-color:rgba(119, 192, 255, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+    <td class="tg-jxu1"><span style="background-color:rgba(255, 254, 134, 0.9)"> </span><br><span style="font-weight:normal;font-style:normal;color:#000">&#x2B07</span><span style="background-color:rgba(255, 254, 134, 0.9)"> </span></td>
+  </tr>
+</tbody>
+</table>
+
+</body>
+</html>
