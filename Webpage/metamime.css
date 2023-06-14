@@ -11,6 +11,12 @@ Body{
     height: 170px;
     float: left;
 }
+#comp{
+	width: 600px;
+	height: 1100px;
+	margin-left: 400px;
+	border-radius: 15px;
+}
 #mouse{
 	width: 500px;
     height: 300px;
@@ -64,11 +70,11 @@ Body{
 .intro{
 	margin: 40px;
 	font-family: sans-serif;
-	margin-top: 60px;
+	margin-top: 20px;
 	color: black;
 	display: inline-block;
 	font-size: 16px;
-	padding: 5px 5px 5px 30px;
+	padding: 5px 20px 5px 30px;
 	background-color: #D5D5D5;
 	border-radius: 10px;
 	transition: 0.7s;
@@ -135,6 +141,3 @@ Body{
 	color: #FFFFFF;
 	font-size: 18px;
 }
-
-
-
